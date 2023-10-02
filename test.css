@@ -1,0 +1,147 @@
+.a
+{
+    width: 100%;
+    border: 1px solid #000;
+    .b
+    {
+        border: 1px solid #7FFF7F7F;
+        background-color: #FFFFAA7F;
+        .btn1
+        {
+            height: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            color:#700;
+            font-weight: bold;
+        }
+        .b1
+        {
+            border: 1px solid #7FFF7F7F;
+        }
+        .b2
+        {
+            border: 1px solid #7FFF7F7F;
+            background-color: #AAFFAA7F;
+            .array
+            {
+                width: 100%;
+                .hhead
+                {
+                    background-color: #FFFF7F7F;
+                    .c:hover
+                    {
+                        background-color: #FFF;
+                    }
+                }
+                .bbody
+                {
+                    background-color: #7FFFFF7F;
+                }
+                .c
+                {
+                    border: 1px solid #990;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        .lalabel
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color:blueviolet;
+        }
+        .u1
+        {
+            background-color: pink;
+	    border: 1px solid magenta;
+            height: 30px;
+        }
+    }
+}
+img.hidden
+{
+    float: left;
+    transition: width 1s;
+}
+img.hidden:focus 
+{
+    width: 0px;
+    height: 60px;
+}
+img.hidden:focus + ul
+{
+    left: 10%;
+}
+ul 
+{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    left: -800px;
+    transition: left 1s;
+}
+
+@media all and (max-width: 500px) 
+{
+    .a
+    {
+        background-color: FFFFAA;
+        border: 1px solid #900;
+        .b
+        {
+            display:block;
+            border: none;
+            .b1
+            {
+                display:table-footer-group;
+                border: none;
+    
+            }
+            .b2
+            {
+                display:table-header-group;
+                border: none;
+    
+            }
+        }
+        .btnl
+        {
+            position: relative;
+            top: -50px;
+            left: 180px;
+        }
+        .btnr
+        {
+            position: relative;
+            top: 2px;
+            left: 231px;
+        }
+        .lalabel
+        {
+            position: relative;
+            left: 80%;
+            bottom: 130px;
+        }
+    }
+    img.hidden
+    {
+        display:none;
+    }
+    ul 
+    {
+        position: relative;
+        margin: 0;
+        left: -20px;
+        top: -100px;
+        .u1
+        {
+            display: block;
+            position: relative;
+            background-color: pink;
+ 	    border: 1px solid magenta;
+            height: 30px;
+        }
+    }
+}
